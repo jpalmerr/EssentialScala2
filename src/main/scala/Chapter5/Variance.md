@@ -28,6 +28,8 @@ sealed trait A[+T]
 final case class B[T](t: T) extends A[T]
 case object C extends A[Nothing]
 ```
+
+as Nothing is a subtype of anything
  
  ## Exercise
  
@@ -48,11 +50,15 @@ def groom(groomer: Cat => CatSound): CatSound = {
  which of the following can I pass to groom?
  
  a) A function of type Animal => Purr
+ 
  b) A function of type Siamese => Purr
+ 
  c) A function of type Animal => Sound
  
  
  a) Yes
+ 
  b) No, Oswald is not Siamese cat
+ 
  c) No as require a CatSound
  
