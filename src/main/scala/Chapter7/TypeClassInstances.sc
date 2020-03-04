@@ -13,7 +13,7 @@ called an implicit value, that allows us to get the compiler to pass the type cl
  */
 
 
-implicit val ordering = Ordering.fromLessThan[Int](_ < _)
+implicit val ordering: Ordering[Int] = Ordering.fromLessThan[Int](_ < _)
 
 List(2, 4, 3).sorted // List(2, 3, 4)
 List(1, 7 ,5).sorted // List(1, 5, 7)

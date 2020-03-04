@@ -1,4 +1,4 @@
-Ultimately the decision is up to us. Different teams will adopt different programming styles. However, we look at the properঞes of each approach to
+Ultimately the decision is up to us. Different teams will adopt different programming styles. However, we look at the properties of each approach to
 inform our choices:
 
 *Inheritance-based approaches*

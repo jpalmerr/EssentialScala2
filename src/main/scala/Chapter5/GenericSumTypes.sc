@@ -6,7 +6,7 @@ final case class Right[A, B](value: B) extends Sum[A, B]
 
 
 def intOrString(input: Boolean): Sum[Int, String] =
-  if(input == true) {
+  if(input) {
     Left[Int, String](123)
   } else {
     Right[Int, String]("abc")
